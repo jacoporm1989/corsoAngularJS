@@ -12,16 +12,32 @@
 <body>
     <div id="container" ng-app="">
 
-       <div ng-init="calciatore1={nome:'Tote',cognome:'George'}">
-       Nome: <input type="text" name="calciatore" ng-model="calciatore1.nome">
-       Cognome <input type="text" name="calciatore" ng-model="calciatore1.cognome">
-
-       <p>Il calciatore si chiama <span ng-bind-template="{{calciatore1.nome}} {{calciatore1.cognome}}"></span> </p>
-
-    
-
-       </div>
-    <script src="prova.js"></script>
+        <div ng-init="animali=[{
+            nome:'Pongo',
+            razza:'cane'
+        },
+        {
+            nome:'Nessie',
+            razza:'Dinosauro'
+        
+        },
+        {
+            nome:'Estinto',
+            razza:'Mammut'
+        }]">
+        <table cellspacing="1" bgcolor="#000000">
+            <tr  bgcolor="#ffffff">
+              <th>Nome</th>
+              <th>Razza</th>
+            </tr>
+            <tr  bgcolor="#ffffff" ng-repeat="animale in animali" >
+              <td ng-bind="animale.nome"></td>
+              <td ng-bind="animale.razza">George</td>
+            </tr>
+            
+          </table>
+        </div>
+        <script src="prova.js"></script>
 </body>
 
 </html>

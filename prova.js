@@ -11,6 +11,19 @@ persona2={
 }
 
 
+animali=[{
+    nome:'Pongo',
+    razza:'cane'
+},
+{
+    nome:'Nessie',
+    razza:'Dinosauro'
+
+},
+{
+    nome:'Estinto',
+    razza:'Mammut'
+}]
 persona1={
     nome:'Guendalina',
     cognome:'Panini',
